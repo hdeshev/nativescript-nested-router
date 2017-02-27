@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DogService } from '../dog.service';
+import { componentNavigation } from "../animations";
 
 @Component({
     selector: 'my-dogs',
-    templateUrl: './dogs/dogs.component.html'
+    templateUrl: './dogs/dogs.component.html',
+    animations: componentNavigation
 })
 export class DogsComponent {
   public dogs: Array<any>;

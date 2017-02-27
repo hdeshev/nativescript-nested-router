@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RouterExtensions } from 'nativescript-angular';
+import { componentNavigation } from "../animations";
 
 import { DogService } from '../dog.service';
 
 @Component({
     selector: 'my-dog-details',
-    templateUrl: './dog-details/dog-details.component.html'
+    templateUrl: './dog-details/dog-details.component.html',
+    animations: componentNavigation
 })
 export class DogDetailsComponent implements OnInit{
   public dog: any;

@@ -26,13 +26,13 @@ export class HomeComponent {
   }
 
   tabViewIndexChange(index: number) {
-    switch(index) {
-      case 0: 
-        this.navigateToDogsRoot();
-        break;
-      case 1:
-        this.navigateToCatsRoot();
-        break;    
-    }
+    //switch(index) {
+      //case 0: 
+        //this.navigateToDogsRoot();
+        //break;
+      //case 1:
+        //this.navigateToCatsRoot();
+        //break;    
+    //}
   }
 }
